@@ -22,12 +22,12 @@
         </section>
     </main>
     <script src="node_modules/tone/build/Tone.js"></script>
-    <script src="node_modules/audio-recorder-polyfill/wave-encoder.js"></script>
+    <script src="wave-encoder.js"></script>
     <script>
         if (!window.MediaRecorder) {
             console.log('Adding polyfill')
             document.write(
-                decodeURI('%3Cscript defer src="node_modules/audio-recorder-polyfill/index.js">%3C/script>')
+                decodeURI('%3Cscript defer src="index.js">%3C/script>')
             )
         }
     </script>
