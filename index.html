@@ -11,17 +11,18 @@
 <body>
     <main>
         <section id="main-controls">
-            <p id="visualizer"></p>
+            <canvas id="visualizer" width="300" height="50"></canvas>
             <div id="buttons">
                 <button id="record">Record</button>
                 <button id="stop">Stop</button>
+                <button id="save">Save</button>
             </div>
         </section>
         <section id="sound-clips">
+
             <audio controls></audio>
         </section>
     </main>
-    <script src="node_modules/tone/build/Tone.js"></script>
     <script src="wave-encoder.js"></script>
     <script>
         if (!window.MediaRecorder) {
